@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title></title>
+    <!--Se agrega jquery se puede descargar e idicar la carpeta-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        //Jquery trabaja con el dom (modelo de objetos del documento)
+
+        //Obtiene el elemento que tenga el id
+        document.getElementById("");
+        //Obtiene los elementos con la etiqueta
+        document.getElementsByTagName("");
+        //Selecciona todas la etiquetas dentro de una etiqueta con el id
+        //El script se pone despues de los elementos a manipular
+        var img=document.querySelectorAll("#id etiquetaASeleccionar");
+        //Con jquery
+        //Elemento por class
+        $(".class");
+        //Elemeto por id
+        $("#id");
+        //Elementos con la etiqueta
+        $("etiqueta");
+        //Selecciona todas la etiquetas dentro de una etiqueta con el id
+       //Funcion anonima
+       $(document).ready(function(){
+            $("#id etiquetaASelecionar")
+       });
+       //Sustituir elemento dentro de un nodo
+       $(document).ready(function(){
+            $("#idNodo").htlm("<p>Etiqueta de cambio</p>");
+       });
+       //Agregar contenido
+       $(document).ready(function(){
+           //Al principio del contenido del nodo
+           $("#idNodo").prepend("<h1>Contenido</h1>");
+           //Al final del contenido del nodo
+            $("#idNodo").append("<p>Contenido</p>");
+            //Antes del nodo
+            $("#idNodo").before("<h2>Contenido</h2>");
+            //Despues del nodo
+            $("#idNodo").after("<h3>Contenido</h3>");
+            //Agregar pudo texto, no se maneja etiquetas
+            $("#idNodo").text("texto");
+            //Eliminar nodo
+            $("#idNodo").remove();
+            //Remplzar nodo
+            $("#idNodo").replaceWith("<h4>Contenido</h4>") 
+       });
+        $(document).ready(function(){
+       //Load sirve para cargar elemento sin recargar pagina
+       $("#idNodo").load("ajax/test.html")
+            //Ajax nos permite hacer peticiones al servidor de manera asincrona(No se necesita esperar la respuesta de una peticion para realizar otra)
+       });
+    </script>
+    </head>
+    <body>
+
+    </body>
+</html>

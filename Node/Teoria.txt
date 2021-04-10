@@ -1,0 +1,1 @@
+Node es una plataforma principalmente para desarrollar aplicaciones web en el servidor
